@@ -42,7 +42,7 @@ $(document).ready(function(){
 	/*	Fix Slider Height
 	/* ========================================================================= */	
 
-	var slideHeight = $(window).height() - 120;
+	var slideHeight = $(window).height() - 200;
 	
 	$('#slider, .carousel.slide, .carousel-inner, .carousel-inner .item').css('height',slideHeight);
 
