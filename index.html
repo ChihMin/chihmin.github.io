@@ -19,6 +19,24 @@
 		
 		<!-- Google Font -->
 		
+		<style>
+        	@font-face {
+			  font-family: 'cwTeXHei';
+			  font-style: normal;
+			  font-weight: 500;
+				letter-spacing: 4px;
+			  src: url(http://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+			  src: url(http://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+			       url(http://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+			       url(http://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+			       url(http://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+			}
+
+			.chinese{
+				font-family: 'Open Sans', 'cwTeXHei', sans-serif;
+			}
+        </style>
+
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
 		<!-- CSS
@@ -39,6 +57,7 @@
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
 
+        
     </head>
 	
     <body id="body">
@@ -87,8 +106,8 @@
                         <li class="current"><a href="#body"><span class="glyphicon glyphicon-home txt-lg" aria-hidden="true"></span></a></li>
 
                         <li><a href="#features" class="txt-lg">Comet Printer</a></li>
-                        <li><a href="#works" class="txt-lg">購買</a></li>
-                        <li><a href="#team" class="txt-lg">圖集</a></li>
+                        <li><a href="#works" class="txt-lg chinese">購買</a></li>
+                        <li><a href="#team" class="txt-lg chinese">圖集</a></li>
                         <li><a href="#contact" class="txt-lg">Contact</a></li>
                     </ul>
                 </nav>
@@ -201,20 +220,22 @@
 				<div class="row">
 				
 					<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-						<h2>Features</h2>
-						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						<h2>Comet Printer</h2>
+						<div class="devider"><i class="fa fa-bookmark fa-lg"></i></div>
 					</div>
 
 					<!-- service item -->
 					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
 						<div class="service-item">
 							<div class="service-icon">
-								<i class="fa fa-github fa-2x"></i>
+								<i class="fa fa-star-o fa-2x"></i>
 							</div>
 							
 							<div class="service-desc">
-								<h3>品牌</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+								<h3>Simple <span class="chinese">簡易</span></h3>
+								<p style="font-size: 12pt; letter-spacing: 4px; line-height: 25px;" class="chinese">容易上手的操作界面<br />
+									提供您最佳的3D列印體驗
+								</p>
 							</div>
 						</div>
 					</div>
@@ -228,8 +249,10 @@
 							</div>
 							
 							<div class="service-desc">
-								<h3>研發</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+								<h3>Style <span class="chinese">風格</span></h3>
+								<p style="font-size: 12pt; letter-spacing: 4px; line-height: 25px;">精工一體Delta造型<br />
+									配上多種主色<br />
+									結合工藝與色彩之美</p>
 							</div>
 						</div>
 					</div>
@@ -243,8 +266,8 @@
 							</div>
 							
 							<div class="service-desc">
-								<h3>創造</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+								<h3 class="chinese">Perfect 完美</h3>
+								<p  style="font-size: 12pt; letter-spacing: 4px; line-height: 25px;">超凡列印品質<br />顛覆您對列印的想像</p>
 							</div>
 						</div>
 					</div>
