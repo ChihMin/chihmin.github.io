@@ -548,34 +548,40 @@
 				
 					
 					<!-- contact address -->
-					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
 						<div class="contact-address">
-							<h3>Cras at ultrices erat, sed vulputate!</h3>
-							<p>2345 Setwant natrer, 1234,</p>
-							<p>Washington. United States.</p>
-							<p>(401) 1234 567</p>
+							<h3 class="chinese">對於產品購買有任何疑問</h3>
+							<h3 class="chinese">歡迎隨時來信</h3>
+							<div style="font-size: 12pt;">
+							<p class="chinese">地址：新北市樹林區柑園街二段247巷6號之4</p>
+							<p class="chinese">電話：(02)2668-6304</p>
+							</div>
 						</div>
 					</div>
 					<!-- end contact address -->
 					
 					<!-- contact form -->
-					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="contact-form">
-							<h3>Say hello!</h3>
-							<form action="#" id="contact-form">
+							<h3 class="chinese">聯絡我們</h3>
+							<form action="https://docs.google.com/forms/d/1cAdKiab4sixt_U1AqpYp1w1RhSeHB5gv5kpZyah0AZI/formResponse" id="contact-form" method="POST" target="_blank" onsubmit>
 								<div class="input-group name-email">
 									<div class="input-field">
-										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+										<input type="text" name="entry.27578063" value="" class="ss-q-short required form-control" id="entry_27578063" dir="auto" aria-label="稱呼  " aria-required="true" required="" title="" placeholder="稱呼">
 									</div>
 									<div class="input-field">
-										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+										<input type="text" name="entry.1242391931" value="" class="ss-q-short form-control" id="entry_1242391931" dir="auto" aria-label="電子郵件" aria-required="true" required="" title="" placeholder="電子郵件">
 									</div>
 								</div>
 								<div class="input-group">
-									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+									<textarea name="entry.553289930" rows="8" cols="0" class="ss-q-long form-control" id="entry_553289930" dir="auto" aria-label="訊息  " aria-required="true" required="" placeholder="詢問內容"></textarea>
 								</div>
 								<div class="input-group">
-									<input type="submit" id="form-submit" class="pull-right" value="Send message">
+									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12"></div>
+									<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+										<input type="submit" name="submit" value="送出" id="ss-submit" class="pull-right jfk-button-action btn btn-success btn-block">
+									</div>
+									
 								</div>
 							</form>
 						</div>
@@ -583,6 +589,7 @@
 					<!-- end contact form -->
 					
 					<!-- footer social links -->
+					<!--
 					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
 						<ul class="footer-social">
 							<li><a href="https://www.behance.net/Themefisher"><i class="fa fa-behance fa-2x"></i></a></li>
@@ -591,6 +598,7 @@
 							<li><a href="https://www.facebook.com/Themefisher"><i class="fa fa-facebook fa-2x"></i></a></li>
 						</ul>
 					</div>
+					-->
 					<!-- end footer social links -->
 					
 				</div>
@@ -704,61 +712,5 @@
 		<!-- Custom Functions -->
         <script src="js/custom.js"></script>
 		
-		<script type="text/javascript">
-			$(function(){
-				/* ========================================================================= */
-				/*	Contact Form
-				/* ========================================================================= */
-				
-				$('#contact-form').validate({
-					rules: {
-						name: {
-							required: true,
-							minlength: 2
-						},
-						email: {
-							required: true,
-							email: true
-						},
-						message: {
-							required: true
-						}
-					},
-					messages: {
-						name: {
-							required: "come on, you have a name don't you?",
-							minlength: "your name must consist of at least 2 characters"
-						},
-						email: {
-							required: "no email, no message"
-						},
-						message: {
-							required: "um...yea, you have to write something to send this form.",
-							minlength: "thats all? really?"
-						}
-					},
-					submitHandler: function(form) {
-						$(form).ajaxSubmit({
-							type:"POST",
-							data: $(form).serialize(),
-							url:"process.php",
-							success: function() {
-								$('#contact-form :input').attr('disabled', 'disabled');
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$(this).find(':input').attr('disabled', 'disabled');
-									$(this).find('label').css('cursor','default');
-									$('#success').fadeIn();
-								});
-							},
-							error: function() {
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$('#error').fadeIn();
-								});
-							}
-						});
-					}
-				});
-			});
-		</script>
     </body>
 </html>
